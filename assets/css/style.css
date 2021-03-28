@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+/*-------------- Universal Site Settings --------------*/
+
+.press-start {
+    font-family: 'Press Start 2P', cursive;
+}
+
+/*-------------- Header --------------*/
+
+header {
+    background-color: #c1c5ba;
+    text-align: center;
+}
+
+#darkmode, #levels-header {
+    margin-top: 15px;
+}
+
+#home {
+    margin-top:5px;
+}
+
+#home a {
+    text-decoration: none;
+    color: black;
+}

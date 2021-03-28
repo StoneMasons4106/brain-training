@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed&display=swap');
+
+/*-------------- Universal Site Settings --------------*/
+
+.fira-sans-condensed {
+    font-family: 'Fira Sans Condensed', sans-serif;
+}
+
+/*-------------- Header --------------*/
+
+header {
+    background-color: black;
+    text-align: center;
+    color: #c1c5ba;
+}
+
+#darkmode, #levels-header {
+    margin-top: 10px;
+}
