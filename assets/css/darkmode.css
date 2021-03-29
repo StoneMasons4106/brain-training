@@ -22,7 +22,7 @@ header {
     margin-top:5px;
 }
 
-#home a {
+#home a, #levels-header a {
     text-decoration: none;
     color: #d5dadd;
 }
@@ -38,6 +38,35 @@ header {
     -o-background-size: cover;
     background-size:cover;
     background-attachment: fixed;
+}
+
+/*-------------- Levels - Home --------------*/
+
+#levels, .select-level {
+    text-align: center;
+}
+
+#levels a, .level-1 a, .level-2 a, .level-3 a {
+    text-decoration: none;
+    color: black;
+}
+
+.level-1 {
+    background-color: #68a35c;
+}
+
+.level-2 {
+    background-color: #beb14f;
+}
+
+.level-3 {
+    background-color: #be574f;
+}
+
+/*-------------- Footer - Home --------------*/
+
+.footer-home {
+    text-align: center;
 }
 
 /*-------------- Hero Image - How to Play --------------*/
