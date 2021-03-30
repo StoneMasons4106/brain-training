@@ -1,45 +1,69 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Brain Training
 
-Welcome StoneMasons4106,
+[View the live project here!](https://stonemasons4106.github.io/brain-training/)
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use.
+## UX
 
-## Gitpod Reminders
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+Design Features Include:
 
-`python3 -m http.server`
 
-A blue button should appear to click: *Make Public*,
+## Features
 
-Another blue button should appear to click: *Open Browser*.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+## Technologies Used
 
-A blue button should appear to click: *Make Public*,
+**Languages Used**
 
-Another blue button should appear to click: *Open Browser*.
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+**Frameworks, Libraries & Programs Used**
 
-## Updates Since The Instructional Video
+##Testing
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+### Further Testing
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+### Known Bugs
+    
+## Deployment
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+### Github Pages
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+This project was deployed to GitHub Pages using the steps below:
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+1. Log into GitHub and locate the [GitHub Repository](https://github.com/StoneMasons4106/kermit-and-the-frogs).
+2. Locate the Repository settings wheel, not the page settings wheel, and click it.
+3. Scroll until you see the GitHub pages section.
+4. Instead of 'None', select 'Master Branch'.
+5. After the page refreshes, scroll down until you see the link to the now deployed page.
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+### Forking the Repository
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+You can fork the repository and create a copy for yourself in your own account.
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+1. Log into GitHub and locate the [GitHub Repository](https://github.com/StoneMasons4106/kermit-and-the-frogs).
+2. Locate the Fork button, next to the repository settings button.
+3. Go to your repositories, and you should see a copy made for you to edit as you please.
 
---------
+### Local Clone
 
-Happy coding!
+If you'd like to have a copy on your local machine, follow the steps below:
+
+1. Log into GitHub and locate the [GitHub Repository](https://github.com/StoneMasons4106/kermit-and-the-frogs).
+2. Under the name of the repository, click 'Clone or Download'.
+3. Click 'Clone with HTTPS', and copy the link.
+4. Open Git Bash on your local computer.
+5. Change the directory to where you want the clone located.
+6. Type ```git clone``` and paste the URL from step 3.
+7. Hit enter. A local clone was now created in the directory you specified.
+
+## Credits
+
+#### Media
+
+#### Characters
+
+#### Content
+
+#### Code
+
+#### Acknowledgments
