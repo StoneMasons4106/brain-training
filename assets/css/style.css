@@ -15,15 +15,15 @@ header {
     width:100%;
 }
 
-#darkmode, #levels-header {
-    margin-top: 10px;
+#darkmode, #how-to-play {
+    margin-top: 5px;
 }
 
 #home {
     margin-top: 5px;
 }
 
-#home a, #levels-header a {
+#home a, #how-to-play a {
     text-decoration: none;
     color: black;
 }
@@ -46,11 +46,11 @@ header {
 
 #levels-section {
     position:fixed;
-    top:33%;
-    left:40%;
+    top:20%;
+    left:45%;
 }
 
-#levels, .select-level {
+.select-level {
     text-align: center;
 }
 
@@ -59,26 +59,38 @@ header {
     color: black;
 }
 
-.level-1, .level-2, .level-3 {
-    background-color: #d5dadd;
+.circle {
+    width: 125px;
+    height: 125px;
+    line-height:125px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 50%;
 }
 
-.circle-green {
-    color:green;
-    float:left;
-    font-size:72px;
+.circle:hover {
+    left:20%;
+    width: 150px;
+    height: 150px;
+    line-height:150px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 50%;
+    text-decoration: underline;
 }
 
-.circle-yellow {
-    color:yellow;
-    float:left;
-    font-size:72px;
+.green {
+    margin-top:25px;
+    background-color:green;
 }
 
-.circle-red {
-    color:red;
-    float:left;
-    font-size:72px;
+.yellow {
+    margin-top:25px;
+    background-color:yellow;
+}
+
+.red {
+    background-color:red;
 }
 
 /*-------------- Footer - Home --------------*/
@@ -92,17 +104,4 @@ header {
 
 .footer-text {
     margin-top:15px;
-}
-/*-------------- Hero Image - How to Play --------------*/
-
-#hero-how-to-play {
-    width:100%;
-    height:100%;
-    background: url("../images/chess.jpg") no-repeat center center; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size:cover;
-    position:fixed;
-    z-index:-100;
 }

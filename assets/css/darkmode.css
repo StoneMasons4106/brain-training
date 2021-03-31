@@ -1,11 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
-
-/*-------------- Universal Site Settings --------------*/
-
-.press-start {
-    font-family: 'Press Start 2P', cursive;
-}
-
 /*-------------- Header --------------*/
 
 header {
@@ -13,71 +5,24 @@ header {
     text-align: center;
 }
 
-#darkmode, #levels-header {
-    margin-top: 10px;
+#darkmode, #how-to-play {
     color: #d5dadd;
 }
 
-#home {
-    margin-top:5px;
-}
-
-#home a, #levels-header a {
-    text-decoration: none;
+#home, #how-to-play button {
     color: #d5dadd;
-}
-
-/*-------------- Hero Image - Home --------------*/
-
-#hero-home {
-    width:100%;
-    height: 900px;
-    background: url("../images/artificial-intelligence.jpg") no-repeat center center; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size:cover;
-    background-attachment: fixed;
-}
-
-/*-------------- Levels - Home --------------*/
-
-#levels, .select-level {
-    text-align: center;
-}
-
-#levels a, .level-1 a, .level-2 a, .level-3 a {
-    text-decoration: none;
-    color: black;
-}
-
-.level-1 {
-    background-color: #68a35c;
-}
-
-.level-2 {
-    background-color: #beb14f;
-}
-
-.level-3 {
-    background-color: #be574f;
 }
 
 /*-------------- Footer - Home --------------*/
 
 .footer-home {
+    position:fixed;
+    bottom:0px;
     text-align: center;
+    background-color: black;
+    color:#d5dadd;;
 }
 
-/*-------------- Hero Image - How to Play --------------*/
-
-#hero-how-to-play {
-    width:100%;
-    height: 900px;
-    background: url("../images/chess.jpg") no-repeat center center; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size:cover;
-    background-attachment: fixed;
+.footer-text {
+    margin-top:15px;
 }
