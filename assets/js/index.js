@@ -2,7 +2,7 @@ $(document).ready(function () {
     let count;
     count = 0;
 
-    $('#how-to-play').click(function () {
+    $('#how-to-play-button').click(function () {
         $('#exampleModalCenter').modal('show');
     })
     
@@ -10,7 +10,7 @@ $(document).ready(function () {
         $('#exampleModalCenter').modal('hide');
     })
 
-    $('#darkmode').click(function () {
+    $('#darkmode-button').click(function () {
         count = count + 1;
         if (count % 2 === 0) {
             $('#darkmode-link').remove();
