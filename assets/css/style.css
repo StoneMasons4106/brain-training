@@ -28,6 +28,10 @@ header {
     color: black;
 }
 
+nav {
+    display:none;
+}
+
 /*-------------- Hero Image - Home --------------*/
 
 #hero-home {
@@ -44,13 +48,9 @@ header {
 
 /*-------------- Levels - Home --------------*/
 
-#levels-section {
-    position:fixed;
-    top:20%;
-    left:45%;
-}
-
 .select-level {
+    position:relative;
+    top:200px;
     text-align: center;
 }
 
@@ -59,38 +59,8 @@ header {
     color: black;
 }
 
-.circle {
-    width: 125px;
-    height: 125px;
-    line-height:125px;
-    -webkit-border-radius: 25px;
-    -moz-border-radius: 25px;
-    border-radius: 50%;
-}
-
-.circle:hover {
-    left:20%;
-    width: 150px;
-    height: 150px;
-    line-height:150px;
-    -webkit-border-radius: 25px;
-    -moz-border-radius: 25px;
-    border-radius: 50%;
-    text-decoration: underline;
-}
-
-.green {
-    margin-top:25px;
-    background-color:green;
-}
-
-.yellow {
-    margin-top:25px;
-    background-color:yellow;
-}
-
-.red {
-    background-color:red;
+.level-1, .level-2 {
+    margin-top:50px;
 }
 
 /*-------------- Footer - Home --------------*/
@@ -104,4 +74,16 @@ header {
 
 .footer-text {
     margin-top:15px;
+}
+
+/*-------------- Media Queries --------------*/
+
+@media screen and (max-width: 767px) {
+    nav {
+        display:block;
+    }
+
+    #darkmode, #how-to-play {
+        display:none;
+    }
 }

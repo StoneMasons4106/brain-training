@@ -65,5 +65,6 @@ If you'd like to have a copy on your local machine, follow the steps below:
 #### Content
 
 #### Code
+https://stackoverflow.com/questions/16245536/setting-a-variable-in-local-storage
 
 #### Acknowledgments

@@ -1,8 +1,13 @@
 $(document).ready(function () {
-    let count;
-    count = 0;
+    var count = localStorage.getItem('count') || 0;
+    
+    if (count % 2 === 0) {
+        $('#darkmode-link').remove();
+    } else {
+        $(document.head).append('<link id="darkmode-link" href="assets/css/darkmode.css" rel="stylesheet" type="text/css">');
+    }
 
-    $('#how-to-play-button').click(function () {
+    $('#how-to-play-button, #how-to-play-dropdown').click(function () {
         $('#exampleModalCenter').modal('show');
     })
     
@@ -10,12 +15,14 @@ $(document).ready(function () {
         $('#exampleModalCenter').modal('hide');
     })
 
-    $('#darkmode-button').click(function () {
-        count = count + 1;
+    $('#darkmode-button, #darkmode-dropdown').click(function () {
+        count = parseInt(count) + 1;
         if (count % 2 === 0) {
             $('#darkmode-link').remove();
+            localStorage.setItem('count', count);
         } else {
             $(document.head).append('<link id="darkmode-link" href="assets/css/darkmode.css" rel="stylesheet" type="text/css">');
+            localStorage.setItem('count', count);
         }
     })
 })

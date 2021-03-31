@@ -22,16 +22,32 @@
     <header>
         <div class="container-fluid">
             <div class="row">
-                <div class="col-sm-4 press-start" id="darkmode">
-                    <button id="darkmode-button" type="button" class="btn btn-outline-primary"><i class="fas fa-moon"></i> Try Darkmode!</button>
+                <div class="col-md-4 press-start" id="darkmode">
+                    <button id="darkmode-button" type="button" class="btn btn-outline-primary"><i
+                            class="fas fa-moon"></i> Try Darkmode!</button>
                 </div>
-                <div class="col-sm-4 press-start" id="home">
+                <div class="col-md-4 press-start" id="home">
                     <h2>BRAIN TRAINING</h2>
                 </div>
-                <div class="col-sm-4 press-start" id="how-to-play">
-                    <button id="how-to-play-button" type="button" class="btn btn-outline-success"><i class="fas fa-question"></i> How to Play</button>
+                <div class="col-md-4 press-start" id="how-to-play">
+                    <button id="how-to-play-button" type="button" class="btn btn-outline-success"><i
+                            class="fas fa-question"></i> How to Play</button>
                 </div>
             </div>
+            <nav>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Menu
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                        <li><button class="dropdown-item" id="darkmode-dropdown" type="button"><i
+                                    class="fas fa-moon"></i> Try Darkmode!</button></li>
+                        <li><button class="dropdown-item" id="how-to-play-dropdown" type="button"><i
+                                    class="fas fa-question"></i> How to Play</button></li>
+                    </ul>
+                </div>
+            </nav>
         </div>
     </header>
     <section>
@@ -68,27 +84,22 @@
     </section>
     <section id="levels-section">
         <div class="container-fluid select-level">
-            <div class="row"><a href="training.html">
-                    <div class="col press-start level-1">
-                        <div class="circle red">
-                            Level 3
-                        </div>
+            <div class="row align-items-center">
+                <div class="col press-start level-3">
+                    <a href="training.html"><button type="button" class="btn btn-danger btn-lg">Level 3</button></a>
+                </div>
+            </div>
+            <div class="row align-items-center"><a href="training.html">
+                    <div class="col press-start level-2">
+                        <a href="training.html"><button type="button" class="btn btn-warning btn-lg">Level
+                                2</button></a>
                     </div>
                 </a>
             </div>
-            <div class="row"><a href="training.html">
-                    <div class="col press-start level-2">
-                        <div class="circle yellow">
-                            Level 2
-                        </div>
-                    </div>
-                </a>        
-            </div>
-            <div class="row"><a href="training.html">
-                    <div class="col press-start level-3">
-                        <div class="circle green">
-                            Level 1
-                        </div>
+            <div class="row align-items-center"><a href="training.html">
+                    <div class="col press-start level-1">
+                        <a href="training.html"><button type="button" class="btn btn-success btn-lg">Level
+                                1</button></a>
                     </div>
                 </a>
             </div>
