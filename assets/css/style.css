@@ -50,7 +50,7 @@ nav {
 
 .select-level {
     position:relative;
-    top:200px;
+    top:275px;
     text-align: center;
 }
 
@@ -85,5 +85,17 @@ nav {
 
     #darkmode, #how-to-play {
         display:none;
+    }
+}
+
+@media screen and (max-height: 775px) {
+    .select-level {
+        top:200px;
+    }
+}
+
+@media screen and (max-height: 600px) {
+    .select-level {
+        top:150px;
     }
 }
