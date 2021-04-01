@@ -88,6 +88,18 @@ nav {
     }
 }
 
+@media screen and (min-height: 1000px) {
+    .select-level {
+        top:350px;
+    }
+}
+
+@media screen and (min-height: 1300px) {
+    .select-level {
+        top:500px;
+    }
+}
+
 @media screen and (max-height: 775px) {
     .select-level {
         top:200px;
