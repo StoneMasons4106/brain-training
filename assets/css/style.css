@@ -76,6 +76,30 @@ nav {
     margin-top:15px;
 }
 
+/*-------------- Hero Image - Challenge --------------*/
+
+#hero-training {
+    width:100%;
+    height:100%;
+    background: url("../images/chess.jpg") no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size:cover;
+    position:fixed;
+    z-index:-100;
+}
+
+
+/*-------------- Footer - Challenge --------------*/
+
+.footer-challenge {
+    position:fixed;
+    bottom:0px;
+    text-align: center;
+    background-color: #d5dadd;
+}
+
 /*-------------- Media Queries --------------*/
 
 @media screen and (max-width: 767px) {

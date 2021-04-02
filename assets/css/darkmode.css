@@ -26,3 +26,13 @@ header {
 .footer-text {
     margin-top:15px;
 }
+
+/*-------------- Footer - Challenge --------------*/
+
+.footer-challenge {
+    position:fixed;
+    bottom:0px;
+    text-align: center;
+    background-color: black;
+    color:#d5dadd;;
+}
