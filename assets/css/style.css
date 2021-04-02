@@ -23,7 +23,7 @@ header {
     margin-top: 5px;
 }
 
-#home a, #how-to-play a {
+li a {
     text-decoration: none;
     color: black;
 }
