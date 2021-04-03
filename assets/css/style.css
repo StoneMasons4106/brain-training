@@ -90,6 +90,16 @@ nav {
     z-index:-100;
 }
 
+/*-------------- Timer - Challenge --------------*/
+
+.timer-section {
+    color:white;
+    position: fixed;
+    bottom:75px;
+    text-align:center;
+    font-size:2em;
+    width:100%;
+}
 
 /*-------------- Footer - Challenge --------------*/
 
