@@ -97,8 +97,23 @@ nav {
     position: fixed;
     bottom:75px;
     text-align:center;
-    font-size:2em;
+    font-size:1.5em;
     width:100%;
+}
+
+#moves-section, #timer {
+    border:2px solid white;
+    border-radius:10px;
+}
+
+#timer-title, #moves-title {
+    margin-left:20px;
+    margin-top:5px;
+    margin-bottom:5px;
+}
+
+#seconds, #moves {
+    margin-right:20px;
 }
 
 /*-------------- Footer - Challenge --------------*/
@@ -119,6 +134,20 @@ nav {
 
     #darkmode, #how-to-play {
         display:none;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .timer-section {
+        font-size:1em;
+        bottom:100px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .timer-section {
+        font-size:.75em;
+        bottom:100px;
     }
 }
 
