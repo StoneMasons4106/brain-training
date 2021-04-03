@@ -93,7 +93,7 @@ nav {
 /*-------------- Timer - Challenge --------------*/
 
 .timer-section {
-    color:white;
+    color:#d5dadd;
     position: fixed;
     bottom:75px;
     text-align:center;
@@ -102,7 +102,7 @@ nav {
 }
 
 #moves-section, #timer {
-    border:2px solid white;
+    border:2px solid #d5dadd;
     border-radius:10px;
 }
 
