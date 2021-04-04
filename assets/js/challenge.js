@@ -21,11 +21,11 @@ $(document).ready(function () {
     })
 
     if (level == 3) {
-        $('#training-image').after('<p>Level 3</p>')
+        $('#training-image').after('<section><div class="container-fluid"><div class="row"><div class="col"><h4 id="level-title" class="press-start">Level 3</h4></div></div></div></section>')
     } else if (level == 2) {
-        $('#training-image').after('<p>Level 2</p>')
+        $('#training-image').after('<section><div class="container-fluid"><div class="row"><div class="col"><h4 id="level-title" class="press-start">Level 2</h4></div></div></div></section>')
     } else if (level == 1) {
-        $('#training-image').after('<p>Level 1</p>')
+        $('#training-image').after('<section><div class="container-fluid"><div class="row"><div class="col"><h4 id="level-title" class="press-start">Level 1</h4></div></div></div></section>')
     }
 
     setInterval(setTime, 1000);

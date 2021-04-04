@@ -90,6 +90,17 @@ nav {
     z-index:-100;
 }
 
+/*-------------- Title - Challenge --------------*/
+
+#level-title {
+    position:fixed;
+    top:75px;
+    text-align:center;
+    width:100%;
+    color:#d5dadd;
+    z-index:-90;
+}
+
 /*-------------- Timer - Challenge --------------*/
 
 .timer-section {
@@ -127,6 +138,12 @@ nav {
 
 /*-------------- Media Queries --------------*/
 
+@media screen and (max-width: 1415px) {
+    #level-title {
+        top:100px;
+    }
+}
+
 @media screen and (max-width: 767px) {
     nav {
         display:block;
@@ -141,6 +158,12 @@ nav {
     .timer-section {
         font-size:1em;
         bottom:100px;
+    }
+}
+
+@media screen and (max-width:366px) {
+    #level-title {
+        top:120px;
     }
 }
 
