@@ -99,6 +99,7 @@ nav {
     width:100%;
     color:#d5dadd;
     z-index:-90;
+    padding-right: 25px;
 }
 
 /*-------------- Timer - Challenge --------------*/
