@@ -120,8 +120,8 @@ nav {
 }
 
 .card {
-    width:100px;
-    height:125px;
+    width:75px;
+    height:100px;
     margin-top:40px;
     cursor: pointer;
     display: flex;
@@ -138,11 +138,14 @@ nav {
 }
 
 .card-front {
-    width:100px;
-    height:125px;
+    width:75px;
+    height:100px;
     background: url("../images/playing-card.jpg") no-repeat center center;
-    transform: rotateX(0deg);
-    -webkit-transform: rotateX(0deg);
+    border-radius: 2px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size:cover;
 }
 
 .card-back {
