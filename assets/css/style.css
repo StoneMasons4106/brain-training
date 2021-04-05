@@ -102,6 +102,25 @@ nav {
     padding-right: 25px;
 }
 
+/*-------------- Cards - Challenge --------------*/
+
+.cards-section {
+    position:fixed;
+    top:100px;
+}
+
+.card {
+    width:125px;
+    height:100px;
+    background: url("../images/playing-card.jpg") no-repeat center center;
+    -webkit-transform:rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+    margin-top:60px;
+}
+
 /*-------------- Timer - Challenge --------------*/
 
 .timer-section {

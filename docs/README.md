@@ -68,5 +68,6 @@ If you'd like to have a copy on your local machine, follow the steps below:
 https://stackoverflow.com/questions/16245536/setting-a-variable-in-local-storage
 https://codepen.io/reynnor/pen/vmNaeM
 https://dev.to/mugas/flip-cards-with-javascript-2ad0
+https://www.computerhope.com/issues/ch001784.htm
 
 #### Acknowledgments
