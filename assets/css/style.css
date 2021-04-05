@@ -107,18 +107,53 @@ nav {
 .cards-section {
     position:fixed;
     top:100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.cards-section .row {
+    width:100%;
 }
 
 .card {
-    width:125px;
-    height:100px;
+    width:100px;
+    height:125px;
+    margin-top:40px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.card-front, .card-back {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-front {
+    width:100px;
+    height:125px;
     background: url("../images/playing-card.jpg") no-repeat center center;
-    -webkit-transform:rotate(90deg);
-    -moz-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    -o-transform: rotate(90deg);
-    transform: rotate(90deg);
-    margin-top:60px;
+    transform: rotateX(0deg);
+    -webkit-transform: rotateX(0deg);
+}
+
+.card-back {
+  transform: rotateX(180deg);
+  -webkit-transform: rotateX(180deg);
+  position: absolute;
+  text-align: center;
+}
+
+.card.flip {
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
 }
 
 /*-------------- Timer - Challenge --------------*/

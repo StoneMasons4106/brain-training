@@ -4,7 +4,8 @@ $(document).ready(function () {
     var totalSeconds = 0;
     var totalMoves = 0;
     var correctMoves = 0;
-    var cardsFlipped = 0;
+    var cardsFlippedNumber = 0;
+    var cardsFlipped = [];
 
     if (count % 2 === 0) {
         $('#darkmode-link').remove();
@@ -30,6 +31,23 @@ $(document).ready(function () {
     } else if (level == 1) {
         $('#training-image').after('<section><div class="container-fluid"><div class="row"><div class="col"><h4 id="level-title" class="press-start">Level 1</h4></div></div></div></section><section><div class="container-fluid cards-section"><div class="row"><div class="col-lg-2" align="center"><div class="card" id="card-1"><div class="card-front"></div><div class="card-back"></div></div></div><div class="col-lg-2" align="center"><div class="card" id="card-2"><div class="card-front"></div><div class="card-back"></div></div></div><div class="col-lg-2" align="center"><div class="card" id="card-3"><div class="card-front"></div><div class="card-back"></div></div></div><div class="col-lg-2" align="center"><div class="card" id="card-4"><div class="card-front"></div><div class="card-back"></div></div></div><div class="col-lg-2" align="center"><div class="card" id="card-5"><div class="card-front"></div><div class="card-back"></div></div></div><div class="col-lg-2" align="center"><div class="card" id="card-6"><div class="card-front"></div><div class="card-back"></div></div></div></div><div class="row"><div class="col-lg-2" align="center"><div class="card" id="card-7"><div class="card-front"></div><div class="card-back"></div></div></div><div class="col-lg-2" align="center"><div class="card" id="card-8"><div class="card-front"></div><div class="card-back"></div></div></div><div class="col-lg-2" align="center"><div class="card" id="card-9"><div class="card-front"></div><div class="card-back"></div></div></div><div class="col-lg-2" align="center"><div class="card" id="card-10"><div class="card-front"></div><div class="card-back"></div></div></div><div class="col-lg-2" align="center"><div class="card" id="card-11"><div class="card-front"></div><div class="card-back"></div></div></div><div class="col-lg-2" align="center"><div class="card" id="card-12"><div class="card-front"></div><div class="card-back"></div></div></div></div><div class="row"><div class="col-lg-2" align="center"><div class="card" id="card-13"><div class="card-front"></div><div class="card-back"></div></div></div><div class="col-lg-2" align="center"><div class="card" id="card-14"><div class="card-front"></div><div class="card-back"></div></div></div><div class="col-lg-2" align="center"><div class="card" id="card-15"><div class="card-front"></div><div class="card-back"></div></div></div><div class="col-lg-2" align="center"><div class="card" id="card-16"><div class="card-front"></div><div class="card-back"></div></div></div><div class="col-lg-2" align="center"><div class="card" id="card-17"><div class="card-front"></div><div class="card-back"></div></div></div><div class="col-lg-2" align="center"><div class="card" id="card-18"><div class="card-front"></div><div class="card-back"></div></div></div></div><div class="row"><div class="col-lg-2" align="center"><div class="card" id="card-19"><div class="card-front"></div><div class="card-back"></div></div></div><div class="col-lg-2" align="center"><div class="card" id="card-20"><div class="card-front"></div><div class="card-back"></div></div></div><div class="col-lg-2" align="center"><div class="card" id="card-21"><div class="card-front"></div><div class="card-back"></div></div></div><div class="col-lg-2" align="center"><div class="card" id="card-22"><div class="card-front"></div><div class="card-back"></div></div></div><div class="col-lg-2" align="center"><div class="card" id="card-23"><div class="card-front"></div><div class="card-back"></div></div></div><div class="col-lg-2" align="center"><div class="card" id="card-24"><div class="card-front"></div><div class="card-back"></div></div></div></div></div></section>');
     }
+
+    $('.card').click(function () {
+        ++cardsFlippedNumber;
+        var cardFlipped = $(this)[0].id;
+        cardsFlipped.push(cardFlipped);
+        console.log(cardsFlipped);
+        $(this).toggleClass('flip');
+        if (cardsFlippedNumber % 2 === 0) {
+            ++totalMoves;
+            $('#moves').html(totalMoves);
+            setTimeout( function() {
+                for (i in cardsFlipped) {
+                    $('#' + cardsFlipped[i]).toggleClass('flip');
+            } cardsFlipped.length = 0;
+        }, 1000);
+    }
+})
 
     setInterval(setTime, 1000);
 
