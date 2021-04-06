@@ -141,7 +141,7 @@ nav {
     width:75px;
     height:100px;
     background: url("../images/playing-card.jpg") no-repeat center center;
-    border-radius: 2px;
+    border-radius: 5px;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -158,6 +158,120 @@ nav {
 .card.flip {
   transform: rotateY(180deg);
   -webkit-transform: rotateY(180deg);
+}
+
+.antelope-canyon, .barley-field, .book, .fall-road, .fog, .lake, .railway, .road, .sailing-ship, .sunbeams, .tree, .wintry {
+    width:75px;
+    height:100px;
+    border-radius: 5px;
+}
+
+.antelope-canyon {
+    background: url("../images/antelope-canyon.jpg") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size:cover;
+    transform:rotateY(180deg);
+}
+
+.barley-field {
+    background: url("../images/barley-field.jpg") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size:cover;
+    transform:rotateY(180deg);
+}
+
+.book {
+    background: url("../images/book.jpg") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size:cover;
+    transform:rotateY(180deg);
+}
+
+.fall-road {
+    background: url("../images/fall-road.jpg") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size:cover;
+    transform:rotateY(180deg);
+}
+
+.fog {
+    background: url("../images/fog.jpg") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size:cover;
+    transform:rotateY(180deg);
+}
+
+.lake {
+    background: url("../images/lake.jpg") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size:cover;
+    transform:rotateY(180deg);
+}
+
+.railway {
+    background: url("../images/railway.jpg") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size:cover;
+    transform:rotateY(180deg);
+}
+
+.road {
+    background: url("../images/road.jpg") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size:cover;
+    transform:rotateY(180deg);
+}
+
+.sailing-ship {
+    background: url("../images/sailing-ship.jpg") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size:cover;
+    transform:rotateY(180deg);
+}
+
+.sunbeams {
+    background: url("../images/sunbeams.jpg") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size:cover;
+    transform:rotateY(180deg);
+}
+
+.tree {
+    background: url("../images/tree.jpg") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size:cover;
+    transform:rotateY(180deg);
+}
+
+.wintry {
+    background: url("../images/wintry.jpg") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size:cover;
+    transform:rotateY(180deg);
 }
 
 /*-------------- Timer - Challenge --------------*/
