@@ -87,5 +87,6 @@ https://stackoverflow.com/questions/16245536/setting-a-variable-in-local-storage
 https://codepen.io/reynnor/pen/vmNaeM
 https://dev.to/mugas/flip-cards-with-javascript-2ad0
 https://www.computerhope.com/issues/ch001784.htm
+https://medium.com/@khaledhassan45/how-to-shuffle-an-array-in-javascript-6ca30d53f772
 
 #### Acknowledgments
