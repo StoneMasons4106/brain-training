@@ -65,7 +65,7 @@ $(document).ready(function () {
                     imagesFlipped.length = 0;
                     var numCards = localStorage.getItem('numCards');
                     if (numCards / correctMoves == 2) {
-                        clearInterval(setTime);
+                        clearInterval(timer);
                     }
                 } else {
                     setTimeout(function () {
@@ -80,7 +80,7 @@ $(document).ready(function () {
         }
     })
 
-    setInterval(setTime, 1000);
+    var timer = setInterval(setTime, 1000);
 
     function setTime() {
         ++totalSeconds;
