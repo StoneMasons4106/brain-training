@@ -16,11 +16,15 @@ The basic functionality and level progression is how I pictured it, but I put my
 
 Design Features Include:
 
-*Press Start 2P Font - This makes it feel very much like NES and like a throwback 90s game, which is intended.
-*Darkmode - This gives the user to change the color theme based on their preference.
-*How to Play - A quick instructional is provided on the home page so the user knows exactly what they are getting into before they play.
-*Fixed Hero Images - Striking hero images give the site a uniform and beautiful display.
-*Mobile Menu - Consolidating the menu down for mobile devices lets it be flexible for device size.
+* **Press Start 2P Font** - This makes it feel very much like NES and like a throwback 90s game, which is intended.
+
+* **Darkmode** - This gives the user to change the color theme based on their preference.
+
+* **How to Play** - A quick instructional is provided on the home page so the user knows exactly what they are getting into before they play.
+
+* **Fixed Hero Images** - Striking hero images give the site a uniform and beautiful display.
+
+* **Mobile Menu** - Consolidating the menu down for mobile devices lets it be flexible for device size.
 
 ## Features
 
