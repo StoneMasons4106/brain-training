@@ -74,7 +74,7 @@ $(document).ready(function () {
                     } 
                     cardsFlipped.length = 0;
                     imagesFlipped.length = 0;
-                    }, 2000);
+                    }, 500);
                 } 
             }
         }

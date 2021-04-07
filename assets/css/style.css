@@ -108,7 +108,7 @@ nav {
 
 .cards-section {
     margin-top:100px;
-    margin-bottom:130px;
+    margin-bottom:150px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -317,6 +317,42 @@ nav {
 
 /*-------------- Media Queries --------------*/
 
+@media screen and (min-height: 1000px) {
+    .select-level {
+        top:350px;
+    }
+}
+
+@media screen and (min-height: 1300px) {
+    .select-level {
+        top:500px;
+    }
+}
+
+@media screen and (max-height: 825px) {
+    .row-2, .row-3, .row-4 {
+        margin-top:-20px;
+    }
+}
+
+@media screen and (max-height: 775px) {
+    .select-level {
+        top:200px;
+    }
+}
+
+@media screen and (max-height: 725px) {
+    .row-2, .row-3, .row-4 {
+        margin-top:-35px;
+    }
+}
+
+@media screen and (max-height: 600px) {
+    .select-level {
+        top:150px;
+    }
+}
+
 @media screen and (max-width: 1415px) {
     #level-title {
         top:100px;
@@ -331,9 +367,13 @@ nav {
     #darkmode, #how-to-play {
         display:none;
     }
+
+    .row-2, .row-3, .row-4 {
+        margin-top:10px;
+    }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 403px) {
     .timer-section {
         font-size:1em;
         bottom:100px;
@@ -344,35 +384,21 @@ nav {
     #level-title {
         top:120px;
     }
+
+    .cards-section {
+        margin-top:120px;
+    }
 }
 
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 320px) {
     .timer-section {
         font-size:.75em;
         bottom:100px;
     }
 }
 
-@media screen and (min-height: 1000px) {
-    .select-level {
-        top:350px;
-    }
-}
-
-@media screen and (min-height: 1300px) {
-    .select-level {
-        top:500px;
-    }
-}
-
-@media screen and (max-height: 775px) {
-    .select-level {
-        top:200px;
-    }
-}
-
-@media screen and (max-height: 600px) {
-    .select-level {
-        top:150px;
+@media screen and (max-width: 300px) {
+    .cards-section {
+        margin-right:20px;
     }
 }
