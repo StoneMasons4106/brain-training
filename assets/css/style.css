@@ -321,11 +321,25 @@ nav {
     .select-level {
         top:350px;
     }
+
+    .row-2, .row-3, .row-4 {
+        margin-top:60px;
+    }
+}
+
+@media screen and (min-height: 1200px) {
+    .row-2, .row-3, .row-4 {
+        margin-top:100px;
+    }
 }
 
 @media screen and (min-height: 1300px) {
     .select-level {
         top:500px;
+    }
+
+    .row-2, .row-3, .row-4 {
+        margin-top:170px;
     }
 }
 
