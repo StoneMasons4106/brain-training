@@ -108,6 +108,7 @@ nav {
 
 .cards-section {
     margin-top:100px;
+    margin-bottom:130px;
     display: flex;
     flex-direction: column;
     justify-content: center;
