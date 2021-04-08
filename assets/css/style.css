@@ -165,7 +165,7 @@ nav {
   -webkit-transform: rotateY(180deg);
 }
 
-.antelope-canyon, .barley-field, .book, .fall-road, .fog, .lake, .railway, .road, .sailing-ship, .sunbeams, .tree, .wintry, .ama-dablam, .canyon, .aurora, .sunrise, .thunderstorm, .wolf {
+.antelope-canyon, .barley-field, .book, .fall-road, .fog, .lake, .railway, .road, .sailing-ship, .sunbeams, .tree, .wintry, .ama-dablam, .canyon, .aurora, .sunrise, .thunderstorm, .wolf, .beach, .castelmezzano, .elephant, .fantasy, .flower-field, .people {
     width:75px;
     height:100px;
     border-radius: 5px;
@@ -333,6 +333,60 @@ nav {
     transform:rotateY(180deg);
 }
 
+.beach {
+    background: url("../images/beach.jpg") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size:cover;
+    transform:rotateY(180deg);
+}
+
+.castelmezzano {
+    background: url("../images/castelmezzano.jpg") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size:cover;
+    transform:rotateY(180deg);
+}
+
+.elephant {
+    background: url("../images/elephant.jpg") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size:cover;
+    transform:rotateY(180deg);
+}
+
+.fantasy {
+    background: url("../images/fantasy.jpg") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size:cover;
+    transform:rotateY(180deg);
+}
+
+.flower-field {
+    background: url("../images/flower-field.jpg") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size:cover;
+    transform:rotateY(180deg);
+}
+
+.people {
+    background: url("../images/people.jpg") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size:cover;
+    transform:rotateY(180deg);
+}
+
 /*-------------- Timer - Challenge --------------*/
 
 .timer-section {
@@ -444,7 +498,7 @@ nav {
     }
 
     .row-2, .row-3, .row-4 {
-        margin-top:10px;
+        margin-top:0px;
     }
 }
 
