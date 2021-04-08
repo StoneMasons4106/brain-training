@@ -488,6 +488,12 @@ nav {
     }
 }
 
+@media screen and (max-width: 992px) {
+    .row-2, .row-3, .row-4 {
+        margin-top:0px;
+    }
+}
+
 @media screen and (max-width: 767px) {
     nav {
         display:block;
@@ -495,10 +501,6 @@ nav {
 
     #darkmode, #how-to-play {
         display:none;
-    }
-
-    .row-2, .row-3, .row-4 {
-        margin-top:0px;
     }
 }
 
