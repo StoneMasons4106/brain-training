@@ -87,7 +87,7 @@ $(document).ready(function () {
                         }
                         cardsFlipped.length = 0;
                         imagesFlipped.length = 0;
-                    }, 500);
+                    }, 1000);
                 }
             }
         }
