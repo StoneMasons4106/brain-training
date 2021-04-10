@@ -79,6 +79,7 @@ $(document).ready(function () {
                     var numCards = localStorage.getItem('numCards');
                     if (numCards / correctMoves == 2) {
                         clearInterval(timer);
+                        $('#winningModal').modal('show');
                     }
                 } else {
                     setTimeout(function () {
