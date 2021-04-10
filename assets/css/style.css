@@ -117,7 +117,8 @@ nav {
 }
 
 .cards-section .row {
-    width:100%;
+    width:75%;
+    align-self: center;
 }
 
 .card {
