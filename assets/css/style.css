@@ -100,7 +100,7 @@ nav {
     width:100%;
     color:#d5dadd;
     z-index:10;
-    padding-right: 25px;
+    padding-right: 22px;
     text-shadow:-1px 0 2px black, 0 1px 2px black, 1px 0 2px black, 0 -1px 2px black;
 }
 
@@ -510,6 +510,11 @@ nav {
     .timer-section {
         font-size:1em;
         bottom:100px;
+    }
+
+    .cards-section .row {
+        width:100%;
+        align-self: center;
     }
 }
 
