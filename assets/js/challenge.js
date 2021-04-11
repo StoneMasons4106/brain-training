@@ -111,4 +111,21 @@ $(document).ready(function () {
             return valString;
         }
     }
+
+    window.fbAsyncInit = function() {
+        FB.init({
+          appId            : '583791025911443',
+          autoLogAppEvents : true,
+          xfbml            : true,
+          version          : 'v10.0'
+        });
+
+        FB.getLoginStatus(function (response) {
+          if (response.status === "connected") {
+              var uid = response.authResponse.userID;
+              var accessToken = response.authResponse.accessToken;
+              console.log(uid, accessToken);
+              }
+          });
+      };
 })
