@@ -37,10 +37,10 @@
         });
 
         FB.getLoginStatus(function (response) {
-        if (response.status === "connected") {
-          var uid = response.authResponse.userID;
-          var accessToken = response.authResponse.accessToken;
-          console.log(uid, accessToken);
+          if (response.status === "connected") {
+            var uid = response.authResponse.userID;
+            var accessToken = response.authResponse.accessToken;
+            console.log(uid, accessToken);
           }
         });
       };
@@ -132,12 +132,10 @@
               </h5>
               <button
                 type="button"
-                class="close-modal"
-                data-dismiss="modal"
+                class="btn-close"
+                data-bs-dismiss="modal"
                 aria-label="Close"
-              >
-                <span aria-hidden="true">&times;</span>
-              </button>
+              ></button>
             </div>
             <div class="modal-body">
               <p>
@@ -222,15 +220,17 @@
         <div class="row">
           <div class="col">
             <div
-            class="fb-login-button"
-            data-width=""
-            data-size="large"
-            data-button-type="continue_with"
-            data-layout="default"
-            data-auto-logout-link="false"
-            data-use-continue-as="true"
-          ></div>
-          <p class="press-start footer-text">Copyright 2021 - StoneMasons Creations</p>
+              class="fb-login-button"
+              data-width=""
+              data-size="large"
+              data-button-type="continue_with"
+              data-layout="default"
+              data-auto-logout-link="false"
+              data-use-continue-as="true"
+            ></div>
+            <p class="press-start footer-text">
+              Copyright 2021 - StoneMasons Creations
+            </p>
           </div>
         </div>
       </div>
