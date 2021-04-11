@@ -280,7 +280,7 @@ $(document).ready(function () {
                 console.log(response.email);
             });
         } else {
-            console.log(response);
+            alert("Log into Facebook first, then try again!");
         }
         }, { scope: "email" });
       }
