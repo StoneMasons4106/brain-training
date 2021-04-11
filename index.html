@@ -1,135 +1,248 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
-        crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
-        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
-    <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
     <title>Brain Training | Home</title>
-    <script src="https://code.jquery.com/jquery-3.6.0.js"
-        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
     <script>
-        window.fbAsyncInit = function() {
-          FB.init({
-            appId            : '583791025911443',
-            autoLogAppEvents : true,
-            xfbml            : true,
-            version          : 'v10.0'
-          });
-        }
-      </script>
-    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
-    <script type="text/javascript" src="assets/js/index.js"></script>
-</head>
+      window.fbAsyncInit = function () {
+        FB.init({
+          appId: "583791025911443",
+          autoLogAppEvents: true,
+          xfbml: true,
+          version: "v10.0",
+        });
 
-<body>
+        FB.getLoginStatus(function (response) {
+        if (response.status === "connected") {
+          var uid = response.authResponse.userID;
+          var accessToken = response.authResponse.accessToken;
+          console.log(uid, accessToken);
+          }
+        });
+      };
+    </script>
+    <script
+      async
+      defer
+      crossorigin="anonymous"
+      src="https://connect.facebook.net/en_US/sdk.js"
+    ></script>
+    <script type="text/javascript" src="assets/js/index.js"></script>
+  </head>
+
+  <body>
     <header>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-4 press-start" id="darkmode">
-                    <button id="darkmode-button" type="button" class="btn btn-outline-primary"><i
-                            class="fas fa-moon"></i> Try Darkmode!</button>
-                </div>
-                <div class="col-md-4 press-start" id="home">
-                    <h2>BRAIN TRAINING</h2>
-                </div>
-                <div class="col-md-4 press-start" id="how-to-play">
-                    <button id="how-to-play-button" type="button" class="btn btn-outline-success"><i
-                            class="fas fa-question"></i> How to Play</button>
-                </div>
-            </div>
-            <nav>
-                <div class="dropdown">
-                    <button class="btn btn-outline-primary dropdown-toggle press-start" type="button" id="dropdownMenu2"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        <i class="fas fa-list"></i> Menu
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                        <li><button class="dropdown-item press-start" id="darkmode-dropdown" type="button"><i
-                                    class="fas fa-moon"></i> Try Darkmode!</button></li>
-                        <li><button class="dropdown-item press-start" id="how-to-play-dropdown" type="button"><i
-                                    class="fas fa-question"></i> How to Play</button></li>
-                    </ul>
-                </div>
-            </nav>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-4 press-start" id="darkmode">
+            <button
+              id="darkmode-button"
+              type="button"
+              class="btn btn-outline-primary"
+            >
+              <i class="fas fa-moon"></i> Try Darkmode!
+            </button>
+          </div>
+          <div class="col-md-4 press-start" id="home">
+            <h2>BRAIN TRAINING</h2>
+          </div>
+          <div class="col-md-4 press-start" id="how-to-play">
+            <button
+              id="how-to-play-button"
+              type="button"
+              class="btn btn-outline-success"
+            >
+              <i class="fas fa-question"></i> How to Play
+            </button>
+          </div>
         </div>
+        <nav>
+          <div class="dropdown">
+            <button
+              class="btn btn-outline-primary dropdown-toggle press-start"
+              type="button"
+              id="dropdownMenu2"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <i class="fas fa-list"></i> Menu
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+              <li>
+                <button
+                  class="dropdown-item press-start"
+                  id="darkmode-dropdown"
+                  type="button"
+                >
+                  <i class="fas fa-moon"></i> Try Darkmode!
+                </button>
+              </li>
+              <li>
+                <button
+                  class="dropdown-item press-start"
+                  id="how-to-play-dropdown"
+                  type="button"
+                >
+                  <i class="fas fa-question"></i> How to Play
+                </button>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </header>
     <section>
-        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
-            aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title press-start" id="exampleModalLongTitle">Welcome to Brain Training!</h5>
-                        <button type="button" class="close-modal" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <p>This is a game where you will compete against your most worthy foe... yourself!</p>
-                        <p>There are 3 levels where you will have to match pictures on the back of cards to other cards
-                            on the table.</p>
-                        <p>Level 1 has 24 cards, level 2 has 36, and level 3 has 48.</p>
-                        <p>Try to complete the level in as little time, and as few moves as possible.</p>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-success close-modal press-start" data-dismiss="modal">Let's
-                            Go!</button>
-                    </div>
-                </div>
+      <div
+        class="modal fade"
+        id="exampleModalCenter"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title press-start" id="exampleModalLongTitle">
+                Welcome to Brain Training!
+              </h5>
+              <button
+                type="button"
+                class="close-modal"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
             </div>
+            <div class="modal-body">
+              <p>
+                This is a game where you will compete against your most worthy
+                foe... yourself!
+              </p>
+              <p>
+                There are 3 levels where you will have to match pictures on the
+                back of cards to other cards on the table.
+              </p>
+              <p>Level 1 has 24 cards, level 2 has 36, and level 3 has 48.</p>
+              <p>
+                Try to complete the level in as little time, and as few moves as
+                possible.
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-success close-modal press-start"
+                data-dismiss="modal"
+              >
+                Let's Go!
+              </button>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
     <section>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col" id="hero-home"></div>
-            </div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col" id="hero-home"></div>
         </div>
+      </div>
     </section>
     <section id="levels-section">
-        <div class="container-fluid select-level">
-            <div class="row align-items-center">
-                <div class="col press-start level-3">
-                    <a href="training.html"><button type="button" id="level-1-button"
-                            class="btn btn-success btn-lg">Level 1</button></a>
-                </div>
-            </div>
-            <div class="row align-items-center">
-                <div class="col press-start level-2">
-                    <a href="training.html"><button type="button" id="level-2-button"
-                            class="btn btn-warning btn-lg">Level
-                            2</button></a>
-                </div>
-            </div>
-            <div class="row align-items-center">
-                <div class="col press-start level-1">
-                    <a href="training.html"><button type="button" id="level-3-button" class="btn btn-danger btn-lg">Level
-                        3</button></a>
-                </div>
-            </div>
+      <div class="container-fluid select-level">
+        <div class="row align-items-center">
+          <div class="col press-start level-3">
+            <a href="training.html"
+              ><button
+                type="button"
+                id="level-1-button"
+                class="btn btn-success btn-lg"
+              >
+                Level 1
+              </button></a
+            >
+          </div>
         </div>
+        <div class="row align-items-center">
+          <div class="col press-start level-2">
+            <a href="training.html"
+              ><button
+                type="button"
+                id="level-2-button"
+                class="btn btn-warning btn-lg"
+              >
+                Level 2
+              </button></a
+            >
+          </div>
+        </div>
+        <div class="row align-items-center">
+          <div class="col press-start level-1">
+            <a href="training.html"
+              ><button
+                type="button"
+                id="level-3-button"
+                class="btn btn-danger btn-lg"
+              >
+                Level 3
+              </button></a
+            >
+          </div>
+        </div>
+      </div>
     </section>
     <footer>
-        <div class="container-fluid footer-home">
-            <div class="row">
-                <div class="fb-login-button col" data-width="" data-size="large" data-button-type="continue_with" data-layout="default" data-auto-logout-link="true" data-use-continue-as="true"></div>
-                <div class="col press-start footer-text">
-                    <p>Copyright 2021 - StoneMasons Creations</p>
-                </div>
-            </div>
+      <div class="container-fluid footer-home">
+        <div class="row">
+          <div
+            class="fb-login-button col"
+            data-width=""
+            data-size="large"
+            data-button-type="continue_with"
+            data-layout="default"
+            data-auto-logout-link="false"
+            data-use-continue-as="true"
+          ></div>
+          <div class="col press-start footer-text">
+            <p>Copyright 2021 - StoneMasons Creations</p>
+          </div>
         </div>
+      </div>
     </footer>
-</body>
+  </body>
 
-<div id="fb-root"></div>
-<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v10.0&appId=583791025911443&autoLogAppEvents=1" nonce="mV3DQp6j"></script>
-
+  <div id="fb-root"></div>
+  <script
+    async
+    defer
+    crossorigin="anonymous"
+    src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v10.0&appId=583791025911443&autoLogAppEvents=1"
+    nonce="LAennXba"
+  ></script>
 </html>

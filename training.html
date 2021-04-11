@@ -23,8 +23,16 @@
             xfbml            : true,
             version          : 'v10.0'
           });
-        };
-      </script>
+
+          FB.getLoginStatus(function (response) {
+            if (response.status === "connected") {
+                var uid = response.authResponse.userID;
+                var accessToken = response.authResponse.accessToken;
+                console.log(uid, accessToken);
+                }
+            });
+        };   
+    </script>
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
     <script type="text/javascript" src="assets/js/challenge.js"></script>  
 </head>
@@ -107,7 +115,7 @@
     <footer>
         <div class="container-fluid footer-challenge">
             <div class="row">
-                <div class="fb-login-button col" data-width="" data-size="large" data-button-type="continue_with" data-layout="default" data-auto-logout-link="true" data-use-continue-as="true"></div>
+                <div class="fb-login-button col" data-width="" data-size="large" data-button-type="continue_with" data-layout="default" data-auto-logout-link="false" data-use-continue-as="true"></div>
                 <div class="col press-start footer-text">
                     <p>Copyright 2021 - StoneMasons Creations</p>
                 </div>
@@ -117,6 +125,6 @@
 </body>
 
 <div id="fb-root"></div>
-<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v10.0&appId=583791025911443&autoLogAppEvents=1" nonce="mV3DQp6j"></script>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v10.0&appId=583791025911443&autoLogAppEvents=1" nonce="LAennXba"></script>
 
 </html>
