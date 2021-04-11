@@ -27,6 +27,24 @@
       integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
       crossorigin="anonymous"
     ></script>
+    <script>
+      window.fbAsyncInit = function () {
+        FB.init({
+          appId: "583791025911443",
+          autoLogAppEvents: true,
+          xfbml: true,
+          version: "v10.0",
+        });
+
+        FB.getLoginStatus(function (response) {
+        if (response.status === "connected") {
+          var uid = response.authResponse.userID;
+          var accessToken = response.authResponse.accessToken;
+          console.log(uid, accessToken);
+          }
+        });
+      };
+    </script>
     <script
       async
       defer
@@ -202,8 +220,9 @@
     <footer>
       <div class="container-fluid footer-home">
         <div class="row">
-          <div
-            class="fb-login-button col"
+          <div class="col">
+            <div
+            class="fb-login-button"
             data-width=""
             data-size="large"
             data-button-type="continue_with"
@@ -211,8 +230,7 @@
             data-auto-logout-link="false"
             data-use-continue-as="true"
           ></div>
-          <div class="col press-start footer-text">
-            <p>Copyright 2021 - StoneMasons Creations</p>
+          <p class="press-start footer-text">Copyright 2021 - StoneMasons Creations</p>
           </div>
         </div>
       </div>

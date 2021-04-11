@@ -79,6 +79,10 @@ $(document).ready(function () {
                     var numCards = localStorage.getItem('numCards');
                     if (numCards / correctMoves == 2) {
                         clearInterval(timer);
+                        var minutes = $('#minutes').html();
+                        var seconds = $('#seconds').html();
+                        var accuracy = Math.floor((correctMoves / totalMoves)*100);
+                        $('#winning-message').append('<p>You completed level ' + level + ' with the following results:</p><p>Time: ' + minutes + ':' + seconds + '</p><p>Moves: ' + totalMoves + '</p><p>Accuracy: ' + accuracy + '%</p>');
                         $('#winningModal').modal('show');
                     }
                 } else {
@@ -111,21 +115,4 @@ $(document).ready(function () {
             return valString;
         }
     }
-
-    window.fbAsyncInit = function() {
-        FB.init({
-          appId            : '583791025911443',
-          autoLogAppEvents : true,
-          xfbml            : true,
-          version          : 'v10.0'
-        });
-
-        FB.getLoginStatus(function (response) {
-          if (response.status === "connected") {
-              var uid = response.authResponse.userID;
-              var accessToken = response.authResponse.accessToken;
-              console.log(uid, accessToken);
-              }
-          });
-      };
 })

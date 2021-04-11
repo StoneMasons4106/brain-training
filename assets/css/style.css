@@ -425,6 +425,10 @@ nav {
     background-color: #d5dadd;
 }
 
+.fb-login-button {
+    float:left;
+}
+
 /*-------------- Media Queries --------------*/
 
 @media screen and (min-height: 1000px) {
