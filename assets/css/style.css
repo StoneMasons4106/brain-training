@@ -425,9 +425,9 @@ nav {
     background-color: #d5dadd;
 }
 
-.fb-login-button {
+.facebook-login {
     float:left;
-    margin-top:12px;
+    margin-top:7px;
 }
 
 /*-------------- Media Queries --------------*/

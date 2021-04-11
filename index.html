@@ -34,12 +34,15 @@
           xfbml: true,
           version: "v10.0",
         });
-        
+
         FB.getLoginStatus(function (response) {
           if (response.status === "connected") {
-            var uid = response.authResponse.userID;
-            var accessToken = response.authResponse.accessToken;
-            console.log('Logged in!');
+            FB.api("/me", { fields: "name,email" }, function (response) {
+              $(".facebook-login").html(
+                "<i class='fab fa-facebook-f'></i> Logged in as " +
+                  response.name
+              );
+            });
           }
         });
       };
@@ -219,15 +222,9 @@
       <div class="container-fluid footer-home">
         <div class="row">
           <div class="col">
-            <div
-              class="fb-login-button"
-              data-width=""
-              data-size="small"
-              data-button-type="continue_with"
-              data-layout="default"
-              data-auto-logout-link="false"
-              data-use-continue-as="true"
-            ></div>
+            <button class="btn btn-outline-primary facebook-login">
+              <i class="fab fa-facebook-f"></i> Log Into Facebook
+            </button>
             <p class="press-start footer-text">
               Copyright 2021 - StoneMasons Creations
             </p>
@@ -236,13 +233,4 @@
       </div>
     </footer>
   </body>
-
-  <div id="fb-root"></div>
-  <script
-    async
-    defer
-    crossorigin="anonymous"
-    src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v10.0&appId=583791025911443&autoLogAppEvents=1"
-    nonce="4uldvp8P"
-  ></script>
 </html>

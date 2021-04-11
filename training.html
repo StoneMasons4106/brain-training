@@ -34,6 +34,17 @@
           xfbml: true,
           version: "v10.0",
         });
+
+        FB.getLoginStatus(function (response) {
+          if (response.status === "connected") {
+            FB.api("/me", { fields: "name,email" }, function (response) {
+              $(".facebook-login").html(
+                "<i class='fab fa-facebook-f'></i> Logged in as " +
+                  response.name
+              );
+            });
+          }
+        });
       };
     </script>
     <script
@@ -144,10 +155,9 @@
             <div class="modal-footer">
               <button
                 type="button"
-                class="btn btn-primary press-start"
-                id="share-score-facebook"
+                class="btn btn-success press-start get-email-results"
               >
-                <i class="fab fa-facebook-f"></i> Share on Facebook
+              <i class="fas fa-envelope-open"></i> Get Results via Email
               </button>
             </div>
           </div>
@@ -178,15 +188,9 @@
       <div class="container-fluid footer-challenge">
         <div class="row">
           <div class="col">
-            <div
-              class="fb-login-button"
-              data-width=""
-              data-size="small"
-              data-button-type="continue_with"
-              data-layout="default"
-              data-auto-logout-link="false"
-              data-use-continue-as="true"
-            ></div>
+            <button class="btn btn-outline-primary facebook-login">
+              <i class="fab fa-facebook-f"></i> Log Into Facebook
+            </button>
             <p class="press-start footer-text">
               Copyright 2021 - StoneMasons Creations
             </p>
@@ -195,13 +199,4 @@
       </div>
     </footer>
   </body>
-
-  <div id="fb-root"></div>
-  <script
-    async
-    defer
-    crossorigin="anonymous"
-    src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v10.0&appId=583791025911443&autoLogAppEvents=1"
-    nonce="4uldvp8P"
-  ></script>
 </html>

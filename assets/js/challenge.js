@@ -253,7 +253,7 @@ $(document).ready(function () {
     }
   }
 
-  $("#share-score-facebook").click(function () {
+  $(".get-email-results").click(function () {
     var level = localStorage.getItem("level");
     var minutes = $("#minutes").html();
     var seconds = $("#seconds").html();
@@ -270,28 +270,19 @@ $(document).ready(function () {
       "! See if you can beat my score by checking it out: https://stonemasons4106.github.io/brain-training";
     FB.getLoginStatus(function (response) {
       if (response.status === "connected") {
-        var userID = response.authResponse.userID;
-        FB.api("/" + userID + "/feed", "post", { message: body }, function (response) {
-          if (!response || response.error) {
-            console.log(response);
-          } else {
-            alert("Posted your score to your feed!");
-          }
-        });
+        FB.api('/me', {fields: 'name,email'}, function (response)  {
+          console.log(response.email);
+      });
       } else {
         FB.login(function (response) {
           if (response.status === "connected") {
-            FB.api("/me/feed", "post", { message: body }, function (response) {
-              if (!response || response.error) {
-                alert("Error occured, could not post.");
-              } else {
-                alert("Posted your score to your feed!");
-              }
+            FB.api('/me', {fields: 'name,email'}, function (response)  {
+                console.log(response.email);
             });
-          } else {
-            alert("Error occured, could not post to your feed.");
-          }
-        });
+        } else {
+            console.log(response);
+        }
+        }, { scope: "email" });
       }
     });
   });
