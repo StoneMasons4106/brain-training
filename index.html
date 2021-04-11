@@ -20,7 +20,6 @@
       integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
       crossorigin="anonymous"
     />
-    <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
     <title>Brain Training | Home</title>
     <script
       src="https://code.jquery.com/jquery-3.6.0.js"
@@ -35,12 +34,12 @@
           xfbml: true,
           version: "v10.0",
         });
-
+        
         FB.getLoginStatus(function (response) {
           if (response.status === "connected") {
             var uid = response.authResponse.userID;
             var accessToken = response.authResponse.accessToken;
-            console.log(uid, accessToken);
+            console.log('Logged in!');
           }
         });
       };
@@ -51,6 +50,7 @@
       crossorigin="anonymous"
       src="https://connect.facebook.net/en_US/sdk.js"
     ></script>
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
     <script type="text/javascript" src="assets/js/index.js"></script>
   </head>
 
@@ -222,7 +222,7 @@
             <div
               class="fb-login-button"
               data-width=""
-              data-size="large"
+              data-size="small"
               data-button-type="continue_with"
               data-layout="default"
               data-auto-logout-link="false"
@@ -243,6 +243,6 @@
     defer
     crossorigin="anonymous"
     src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v10.0&appId=583791025911443&autoLogAppEvents=1"
-    nonce="LAennXba"
+    nonce="4uldvp8P"
   ></script>
 </html>

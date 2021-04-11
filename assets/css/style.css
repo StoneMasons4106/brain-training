@@ -107,7 +107,7 @@ nav {
 /*-------------- Cards - Challenge --------------*/
 
 .cards-section {
-    margin-top:100px;
+    margin-top:130px;
     margin-bottom:150px;
     display: flex;
     flex-direction: column;
@@ -427,6 +427,7 @@ nav {
 
 .fb-login-button {
     float:left;
+    margin-top:12px;
 }
 
 /*-------------- Media Queries --------------*/
@@ -437,13 +438,13 @@ nav {
     }
 
     .row-2, .row-3, .row-4 {
-        margin-top:60px;
+        margin-top:30px;
     }
 }
 
 @media screen and (min-height: 1200px) {
     .row-2, .row-3, .row-4 {
-        margin-top:100px;
+        margin-top:50px;
     }
 }
 
@@ -453,11 +454,11 @@ nav {
     }
 
     .row-2, .row-3, .row-4 {
-        margin-top:170px;
+        margin-top:100px;
     }
 }
 
-@media screen and (max-height: 825px) {
+@media screen and (max-height: 925px) {
     .row-2, .row-3, .row-4 {
         margin-top:-20px;
     }
@@ -469,9 +470,15 @@ nav {
     }
 }
 
-@media screen and (max-height: 725px) {
+@media screen and (max-height: 840px) {
     .row-2, .row-3, .row-4 {
         margin-top:-35px;
+    }
+}
+
+@media screen and (max-height: 800px) {
+    .cards-section {
+        margin-top:110px;
     }
 }
 
@@ -486,11 +493,20 @@ nav {
         width: 11.11%;
         *width: 11.11%;
     }
+
+    .timer-section {
+        top:70px;
+        max-height:50px;
+    }
 }
 
 @media screen and (max-width: 1415px) {
     #level-title {
         top:100px;
+    }
+
+    .timer-section {
+        margin-top:20px;
     }
 }
 
@@ -507,6 +523,11 @@ nav {
 
     #darkmode, #how-to-play {
         display:none;
+    }
+
+    .timer-section {
+        margin-top:0px;
+        bottom:75px;
     }
 }
 
