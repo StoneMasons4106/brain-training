@@ -483,6 +483,29 @@ nav {
     }
 }
 
+@media screen and (max-width: 1750px) {
+    .cards-section .row {
+        width:97%;
+    }
+}
+
+@media screen and (max-width: 1550px) and (min-width: 1201px) {
+    .card {
+        width:90px;
+        height:120px;
+    }
+
+    .card-front {
+        width:90px;
+        height:120px;
+    }
+
+    .antelope-canyon, .barley-field, .book, .fall-road, .fog, .lake, .railway, .road, .sailing-ship, .sunbeams, .tree, .wintry, .ama-dablam, .canyon, .aurora, .sunrise, .thunderstorm, .wolf, .beach, .castelmezzano, .elephant, .fantasy, .flower-field, .people {
+        width:90px;
+        height:120px;
+    }
+}
+
 @media screen and (max-width: 1415px) {
     #level-title {
         top:100px;
