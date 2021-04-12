@@ -459,27 +459,9 @@ nav {
     }
 }
 
-@media screen and (max-height: 925px) {
-    .row-2, .row-3, .row-4 {
-        margin-top:-20px;
-    }
-}
-
 @media screen and (max-height: 775px) {
     .select-level {
         top:200px;
-    }
-}
-
-@media screen and (max-height: 840px) {
-    .row-2, .row-3, .row-4 {
-        margin-top:-35px;
-    }
-}
-
-@media screen and (max-height: 800px) {
-    .cards-section {
-        margin-top:110px;
     }
 }
 
@@ -508,6 +490,10 @@ nav {
 
     .timer-section {
         margin-top:20px;
+    }
+
+    .cards-section {
+        margin-top:135px;
     }
 }
 
@@ -540,10 +526,15 @@ nav {
     }
 }
 
+@media screen and (max-width: 575px) {
+    .timer-section {
+        bottom:100px;
+    }
+}
+
 @media screen and (max-width: 403px) {
     .timer-section {
         font-size:1em;
-        bottom:100px;
     }
 
     .cards-section .row {
