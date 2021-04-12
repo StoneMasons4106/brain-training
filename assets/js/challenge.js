@@ -258,31 +258,58 @@ $(document).ready(function () {
     var minutes = $("#minutes").html();
     var seconds = $("#seconds").html();
     var totalMoves = $("#moves").html();
-    var body =
-      "I completed level " +
-      level +
-      " of Brain Training in " +
-      minutes +
-      ":" +
-      seconds +
-      " only using " +
-      totalMoves +
-      "! See if you can beat my score by checking it out: https://stonemasons4106.github.io/brain-training";
     FB.getLoginStatus(function (response) {
       if (response.status === "connected") {
-        FB.api('/me', {fields: 'name,email'}, function (response)  {
-          console.log(response.email);
-      });
+        FB.api("/me", { fields: "name,email" }, function (response) {
+          emailjs
+            .send("service_48yh5zj", "template_hqru9fr", {
+              level: level,
+              name: response.name,
+              time: minutes + ":" + seconds,
+              total_moves: totalMoves,
+              accuracy: Math.floor((correctMoves / totalMoves) * 100),
+              to_email: response.email,
+            })
+            .then(
+              function (response) {
+                alert("Your results have been sent!");
+              },
+              function (error) {
+                alert("Your results were unable to be sent.");
+              }
+            );
+          return false;
+        });
       } else {
-        FB.login(function (response) {
-          if (response.status === "connected") {
-            FB.api('/me', {fields: 'name,email'}, function (response)  {
-                console.log(response.email);
-            });
-        } else {
-            alert("Log into Facebook first, then try again!");
-        }
-        }, { scope: "email" });
+        FB.login(
+          function (response) {
+            if (response.status === "connected") {
+              FB.api("/me", { fields: "name,email" }, function (response) {
+                emailjs
+                  .send("service_48yh5zj", "template_hqru9fr", {
+                    level: level,
+                    name: response.name,
+                    time: minutes + ":" + seconds,
+                    total_moves: totalMoves,
+                    accuracy: Math.floor((correctMoves / totalMoves) * 100) + "%",
+                    to_email: response.email,
+                  })
+                  .then(
+                    function (response) {
+                      alert("Your results have been sent!");
+                    },
+                    function (error) {
+                      alert("Your results were unable to be sent.");
+                    }
+                  );
+                return false;
+              });
+            } else {
+              alert("Now that you've logged into Facebook, try again!");
+            }
+          },
+          { scope: "email" }
+        );
       }
     });
   });

@@ -20,6 +20,7 @@
       integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
       crossorigin="anonymous"
     />
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
     <title>Brain Training | Challenge</title>
     <script
       src="https://code.jquery.com/jquery-3.6.0.js"
@@ -53,7 +54,15 @@
       crossorigin="anonymous"
       src="https://connect.facebook.net/en_US/sdk.js"
     ></script>
-    <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+            (function () {
+              emailjs.init("user_iKnmj1fZqTzoJqgdPtB3r");
+            })();
+    </script>
     <script type="text/javascript" src="assets/js/challenge.js"></script>
   </head>
 
@@ -157,7 +166,7 @@
                 type="button"
                 class="btn btn-success press-start get-email-results"
               >
-              <i class="fas fa-envelope-open"></i> Get Results via Email
+                <i class="fas fa-envelope-open"></i> Get Results via Email
               </button>
             </div>
           </div>
