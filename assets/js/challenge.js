@@ -267,7 +267,7 @@ $(document).ready(function () {
               name: response.name,
               time: minutes + ":" + seconds,
               total_moves: totalMoves,
-              accuracy: Math.floor((correctMoves / totalMoves) * 100),
+              accuracy: Math.floor((correctMoves / totalMoves) * 100) + "%",
               to_email: response.email,
             })
             .then(
