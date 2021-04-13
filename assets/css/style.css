@@ -489,7 +489,7 @@ nav {
     }
 }
 
-@media screen and (max-width: 1550px) and (min-width: 1201px) {
+@media screen and (max-width: 1550px) and (min-width: 1200px) {
     .card {
         width:90px;
         height:120px;
@@ -504,6 +504,10 @@ nav {
         width:90px;
         height:120px;
     }
+
+    .cards-section {
+        margin-top: 180px;
+    }
 }
 
 @media screen and (max-width: 1415px) {
@@ -514,9 +518,11 @@ nav {
     .timer-section {
         margin-top:20px;
     }
+}
 
+@media screen and (max-width: 1199px) {
     .cards-section {
-        margin-top:135px;
+        margin-top: 135px;
     }
 }
 
