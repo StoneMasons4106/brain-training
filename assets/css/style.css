@@ -433,44 +433,6 @@ nav {
 
 /*-------------- Media Queries --------------*/
 
-@media screen and (min-height: 1000px) {
-    .select-level {
-        top:350px;
-    }
-
-    .row-2, .row-3, .row-4 {
-        margin-top:30px;
-    }
-}
-
-@media screen and (min-height: 1200px) {
-    .row-2, .row-3, .row-4 {
-        margin-top:50px;
-    }
-}
-
-@media screen and (min-height: 1300px) {
-    .select-level {
-        top:500px;
-    }
-
-    .row-2, .row-3, .row-4 {
-        margin-top:100px;
-    }
-}
-
-@media screen and (max-height: 775px) {
-    .select-level {
-        top:200px;
-    }
-}
-
-@media screen and (max-height: 600px) {
-    .select-level {
-        top:150px;
-    }
-}
-
 @media screen and (min-width:992px) {
     .one-ninth {
         width: 11.11%;
@@ -632,5 +594,43 @@ nav {
     .timer-section {
         font-size:.75em;
         bottom:100px;
+    }
+}
+
+@media screen and (min-height: 1000px) {
+    .select-level {
+        top:350px;
+    }
+
+    .row-2, .row-3, .row-4 {
+        margin-top:30px;
+    }
+}
+
+@media screen and (min-height: 1200px) {
+    .row-2, .row-3, .row-4 {
+        margin-top:50px;
+    }
+}
+
+@media screen and (min-height: 1300px) {
+    .select-level {
+        top:500px;
+    }
+
+    .row-2, .row-3, .row-4 {
+        margin-top:100px;
+    }
+}
+
+@media screen and (max-height: 775px) {
+    .select-level {
+        top:200px;
+    }
+}
+
+@media screen and (max-height: 600px) {
+    .select-level {
+        top:150px;
     }
 }
