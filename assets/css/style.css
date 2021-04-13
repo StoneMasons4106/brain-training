@@ -471,12 +471,31 @@ nav {
     }
 }
 
-@media screen and (min-width: 768px) {
-    .col-md-1 {
+@media screen and (min-width:992px) {
+    .one-ninth {
         width: 11.11%;
         *width: 11.11%;
     }
+}
 
+@media screen and (min-width:992px) and (max-width:1200px) {
+    .one-ninth .card {
+        width:90px;
+        height:120px;
+    }
+
+    .one-ninth .card-front {
+        width:90px;
+        height:120px;
+    }
+
+    .one-ninth .antelope-canyon, .one-ninth .barley-field, .one-ninth .book, .one-ninth .fall-road, .one-ninth .fog, .one-ninth .lake, .one-ninth .railway, .one-ninth .road, .one-ninth .sailing-ship, .one-ninth .sunbeams, .one-ninth .tree, .one-ninth .wintry, .one-ninth ama-dablam, .one-ninth .canyon, .one-ninth .aurora, .one-ninth .sunrise, .one-ninth .thunderstorm, .one-ninth .wolf, .one-ninth .beach, .one-ninth .castelmezzano, .one-ninth .elephant, .one-ninth .fantasy, .one-ninth .flower-field, .one-ninth .people {
+        width:90px;
+        height:120px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
     .timer-section {
         top:70px;
         max-height:50px;
@@ -520,15 +539,19 @@ nav {
     }
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1200px) {
+    .row-2, .row-3, .row-4 {
+        margin-top:0px;
+    }
+
     .cards-section {
-        margin-top: 135px;
+        margin-bottom:150px;
     }
 }
 
-@media screen and (max-width: 992px) {
-    .row-2, .row-3, .row-4 {
-        margin-top:0px;
+@media screen and (max-width: 1199px) {
+    .cards-section {
+        margin-top: 135px;
     }
 }
 
@@ -555,9 +578,26 @@ nav {
     }
 }
 
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 600px) {
     .timer-section {
         bottom:100px;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .card {
+        width:90px;
+        height:120px;
+    }
+
+    .card-front {
+        width:90px;
+        height:120px;
+    }
+
+    .antelope-canyon, .barley-field, .book, .fall-road, .fog, .lake, .railway, .road, .sailing-ship, .sunbeams, .tree, .wintry, .ama-dablam, .canyon, .aurora, .sunrise, .thunderstorm, .wolf, .beach, .castelmezzano, .elephant, .fantasy, .flower-field, .people {
+        width:90px;
+        height:120px;
     }
 }
 
@@ -582,15 +622,15 @@ nav {
     }
 }
 
+@media screen and (max-width:350px) {
+    .cards-section {
+        padding-right:25px;
+    }
+}
+
 @media screen and (max-width: 320px) {
     .timer-section {
         font-size:.75em;
         bottom:100px;
-    }
-}
-
-@media screen and (max-width: 300px) {
-    .cards-section {
-        margin-right:20px;
     }
 }
