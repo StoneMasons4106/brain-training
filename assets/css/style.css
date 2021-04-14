@@ -505,6 +505,10 @@ nav {
     .timer-section {
         margin-top:20px;
     }
+
+    .level-1-cards-section {
+        margin-top:150px;
+    }
 }
 
 @media screen and (max-width: 1200px) {
