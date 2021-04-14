@@ -528,6 +528,13 @@ nav {
     }
 }
 
+@media screen and (max-width: 828px) {
+    .timer-section {
+        margin-top:0px;
+        bottom:85px;
+    }
+}
+
 @media screen and (max-width: 767px) {
     nav {
         display:block;
@@ -535,11 +542,6 @@ nav {
 
     #darkmode, #how-to-play {
         display:none;
-    }
-
-    .timer-section {
-        margin-top:0px;
-        bottom:85px;
     }
 
     .facebook-login {
@@ -610,12 +612,22 @@ nav {
     }
 }
 
+@media screen and (min-height: 1100px) {
+    .level-1-cards-section {
+        margin-top:220px;
+    }
+
+    .level-2-cards-section {
+        margin-top: 250px;
+    }
+}
+
 @media screen and (min-height: 1300px) {
     .select-level {
         top:500px;
     }
 
-    .one-ninth-row-1, .one-ninth-row-2, .one-ninth-row-3, .one-ninth-row-4 {
+    .level-2-row, .level-1-row {
         margin-top:70px;
     }
 }
