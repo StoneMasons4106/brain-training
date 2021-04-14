@@ -471,23 +471,29 @@ nav {
 }
 
 @media screen and (max-width: 1550px) and (min-width: 1200px) {
-    .card {
+    .level-2-card, .level-3-card {
         width:90px;
         height:120px;
     }
 
-    .card-front {
+    .level-2-card .card-front, .level-3-card .card-front {
         width:90px;
         height:120px;
     }
 
-    .antelope-canyon, .barley-field, .book, .fall-road, .fog, .lake, .railway, .road, .sailing-ship, .sunbeams, .tree, .wintry, .ama-dablam, .canyon, .aurora, .sunrise, .thunderstorm, .wolf, .beach, .castelmezzano, .elephant, .fantasy, .flower-field, .people {
+    .level-2-card .antelope-canyon, .level-3-card .antelope-canyon, .level-2-card .barley-field, .level-3-card .barley-field, .level-2-card .book, .level-3-card .book, .level-2-card .fall-road, .level-3-card .fall-road, .level-2-card .fog, .level-3-card .fog, .level-2-card .lake, .level-3-card .lake, .level-2-card .railway, .level-3-card .railway, .level-2-card .road, .level-3-card .road, .level-2-card .sailing-ship, .level-3-card .sailing-ship, .level-2-card .sunbeams, .level-3-card .sunbeams, .level-2-card .tree, .level-3-card .tree, .level-2-card .wintry, .level-3-card .wintry, .level-2-card .ama-dablam, .level-3-card .ama-dablam, .level-2-card .canyon, .level-3-card .canyon, .level-2-card .aurora, .level-3-card .aurora, .level-2-card .sunrise, .level-3-card .sunrise, .level-2-card .thunderstorm, .level-3-card .thunderstorm, .level-2-card .wolf, .level-3-card .wolf, .level-2-card .beach, .level-3-card .beach, .level-2-card .castelmezzano, .level-3-card .castelmezzano, .level-2-card .elephant, .level-3-card .elephant, .level-2-card .fantasy, .level-3-card .fantasy, .level-2-card .flower-field, .level-3-card .flower-field, .level-2-card .people, .level-3-card .people {
         width:90px;
         height:120px;
     }
 
-    .cards-section {
-        margin-top: 180px;
+    .level-2-cards-section, .level-3-cards-section {
+        margin-top:180px;
+    }
+}
+
+@media screen and (max-width: 1199px) and (min-width: 992px) {
+    .level-2-cards-section {
+        margin-top:180px;
     }
 }
 
@@ -511,9 +517,9 @@ nav {
     }
 }
 
-@media screen and (max-width: 1199px) {
-    .cards-section {
-        margin-top: 135px;
+@media screen and (max-width: 991px) {
+    .cards-section .row {
+        width:83%;
     }
 }
 
@@ -546,7 +552,7 @@ nav {
     }
 }
 
-@media screen and (max-width:450px) {
+@media screen and (max-width:465px) {
     .card {
         width:90px;
         height:120px;
@@ -578,10 +584,6 @@ nav {
     #level-title {
         top:120px;
     }
-
-    .cards-section {
-        margin-top:120px;
-    }
 }
 
 @media screen and (max-width:350px) {
@@ -601,16 +603,6 @@ nav {
     .select-level {
         top:350px;
     }
-
-    .row-2, .row-3, .row-4 {
-        margin-top:30px;
-    }
-}
-
-@media screen and (min-height: 1200px) {
-    .row-2, .row-3, .row-4 {
-        margin-top:50px;
-    }
 }
 
 @media screen and (min-height: 1300px) {
@@ -618,8 +610,8 @@ nav {
         top:500px;
     }
 
-    .row-2, .row-3, .row-4 {
-        margin-top:100px;
+    .one-ninth-row-1, .one-ninth-row-2, .one-ninth-row-3, .one-ninth-row-4 {
+        margin-top:70px;
     }
 }
 
