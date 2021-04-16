@@ -491,6 +491,12 @@ nav {
     }
 }
 
+@media screen and (max-width: 1550px) and (min-width:1200px) and (max-height:830px) {
+    .level-2-cards-section, .level-3-cards-section {
+        margin-top:120px;
+    }
+}
+
 @media screen and (max-width: 1199px) and (min-width: 992px) {
     .level-2-cards-section {
         margin-top:180px;
