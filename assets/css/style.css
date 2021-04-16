@@ -512,8 +512,26 @@ nav {
         margin-top:20px;
     }
 
-    .level-1-cards-section {
+    .level-1-cards-section, .level-2-cards-section, .level-3-cards-section {
         margin-top:150px;
+    }
+}
+
+@media screen and (min-width:1100px) and (max-width:1550px) and (min-height:1000px) {
+    .level-3-cards-section {
+        margin-top: 220px;
+    }
+}
+
+@media screen and (min-width:1551px) and (min-height:1000px) {
+    .level-3-cards-section {
+        margin-top: 170px;
+    }
+}
+
+@media screen and (min-width:1100px) and (min-height:1250px) {
+    .level-3-row-2, .level-3-row-3, .level-3-row-4 {
+        margin-top: 70px;
     }
 }
 
