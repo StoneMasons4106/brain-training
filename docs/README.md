@@ -26,13 +26,43 @@ Design Features Include:
 
 * **Mobile Menu** - Consolidating the menu down for mobile devices lets it be flexible for device size.
 
+* **Facebook Login** - Login for Facebook available so you can receive your scores to the email that is on your Facebook profile.
+
+Types of users along with their needs are as follows:
+
+* User Stories - End User
+    * As someone who enjoys playing online games, I want it to be challenging enough to hold my attention.
+    * As someone who enjoys playing online games, I want to be able to keep track of my scores and see myself improve.
+    * As someone who enjoys playing online games, I want it to be visually appealing and easy to navigate.
+    * As someone who enjoys playing online games, there should be something that shows you how to play the game.
+
+* User Stories - Creator of the Site
+    * As the creator of the game, I want people to enjoy playing the game. So it has to be both visually appealing and challenging enough to hold someone's attention.
+    * As the creator of the game, I want people to not feel like it is impossible to beat either.
+    * As the creator of the game, I want people to be able to keep track of their scores to see themselves improve.
+
+Here are some links to wireframes that I had drawn up during the process:
+
+[Brain Training - Desktop](brain_training_desktop.pdf)
+
+[Brain Training - Tablet](brain_training_tablet.pdf)
+
+[Brain Training - Mobile](brain_training_mobile.pdf)
+
 ## Features
 
+* Responsive on nearly every conceivable device size.
+* Interactive elements.
+* Connection to Facebook through JS SDK.
+* Connection to emailJS to receive scores after completion of a level. (Requires login to Facebook)
 
 ## Technologies Used
 
 **Languages Used**
 
+* HTML5
+* CSS3
+* JavaScript
 
 **Frameworks, Libraries & Programs Used**
 
