@@ -66,7 +66,25 @@ Here are some links to wireframes that I had drawn up during the process:
 
 **Frameworks, Libraries & Programs Used**
 
-##Testing
+1. [Bootstrap 5.0.0](https://getbootstrap.com/)
+    * Bootstrap was used to assist with the responsiveness and styling of the website.
+
+2. [Google Fonts](https://fonts.google.com/)
+    *  Google fonts were used to import the 'Press Start' font into the style.css file which is used on across the project to give it a retro NES feel.
+
+3. [Font Awesome](https://fontawesome.com/)
+    * Font Awesome was used on all pages throughout the website to add icons for aesthetic purposes.
+
+4. [Git](https://git-scm.com/)
+    * Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
+
+5. [GitHub](https://github.com/)
+    * GitHub is used to store the project's code after being pushed from Git.
+
+6. [Balsamiq](https://balsamiq.com/)
+    * Balsamiq was used to create the wireframes during the design process.
+    
+## Testing
 
 ### Further Testing
 
