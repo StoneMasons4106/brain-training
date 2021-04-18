@@ -143,6 +143,8 @@ nav {
     flex-direction: column;
     transition: transform 0.6s;
     transform-style: preserve-3d;
+    border-radius: 5px;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.6);
 }
 
 .row-2, .row-3, .row-4 {
@@ -154,17 +156,19 @@ nav {
   backface-visibility: hidden;
   display: flex;
   flex-direction: column;
+  border-radius: 5px;
 }
 
 .card-front {
     width:120px;
     height:160px;
     background: url("../images/playing-card.jpg") no-repeat center center;
-    border-radius: 5px;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size:cover;
+    transform: rotateX(0deg);
+    -webkit-transform: rotateX(0deg);
 }
 
 .card-back {
@@ -172,6 +176,9 @@ nav {
   -webkit-transform: rotateX(180deg);
   position: absolute;
   text-align: center;
+  right:0;
+  left:-1px;
+  bottom:-1px;
 }
 
 .card.flip {
