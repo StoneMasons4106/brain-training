@@ -166,11 +166,18 @@ If you'd like to have a copy on your local machine, follow the steps below:
 * All content was written by the developer.
 
 #### Code
-https://stackoverflow.com/questions/16245536/setting-a-variable-in-local-storage
-https://codepen.io/reynnor/pen/vmNaeM
-https://dev.to/mugas/flip-cards-with-javascript-2ad0
-https://www.computerhope.com/issues/ch001784.htm
-https://medium.com/@khaledhassan45/how-to-shuffle-an-array-in-javascript-6ca30d53f772
+
+* [Bootstrap 5.0.0](https://getbootstrap.com/) was used throughout the project mainly to make the site responsive using the Bootstrap Grid System.
+
+* [Font Awesome](https://fontawesome.com/) was used to make the icons in the navigation bar, the Facebook button, as well as the winning modal.
+
+* Putting variables in local storage came from this [Stack Overflow](https://stackoverflow.com/questions/16245536/setting-a-variable-in-local-storage) post.
+
+* The code for the timer in my levels came from this [CodePen](https://codepen.io/reynnor/pen/vmNaeM) post.
+
+* The code for getting my cards to flip came from this [Dev.to](https://dev.to/mugas/flip-cards-with-javascript-2ad0) post.
+
+* The algorithm for shuffling an array in Javascript came from this [Medium.com](https://medium.com/@khaledhassan45/how-to-shuffle-an-array-in-javascript-6ca30d53f772) post.
 
 #### Acknowledgments
 
