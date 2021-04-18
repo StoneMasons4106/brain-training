@@ -64,6 +64,10 @@ nav {
     margin-top:50px;
 }
 
+#level-1-button:hover, #level-2-button:hover, #level-3-button:hover {
+    color: white;
+}
+
 /*-------------- Footer - Home --------------*/
 
 .footer-home {
