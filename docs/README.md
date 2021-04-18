@@ -98,9 +98,30 @@ Here are some links to wireframes that I had drawn up during the process:
        
 ## Testing
 
+I used the W3C Markup Validator and W3C CSS Validator Services to validate every page of the project and ensure there were no syntax errors in the project.
+
+[W3C Markup Validator](https://validator.w3.org/)
+
+[W3C CSS Validator](http://jigsaw.w3.org/css-validator/)
+
+### Testing User Stories from UX Section
+
+* End User
+    * As someone who enjoys playing online games, I want it to be challenging enough to hold my attention.
+    * As someone who enjoys playing online games, I want to be able to keep track of my scores and see myself improve.
+    * As someone who enjoys playing online games, I want it to be visually appealing and easy to navigate.
+    * As someone who enjoys playing online games, there should be something that shows you how to play the game.
+
+* Creator
+    * As the creator of the game, I want people to enjoy playing the game. So it has to be both visually appealing and challenging enough to hold someone's attention.
+    * As the creator of the game, I want people to not feel like it is impossible to beat either.
+    * As the creator of the game, I want people to be able to keep track of their scores to see themselves improve.
+
 ### Further Testing
 
 ### Known Bugs
+
+* On mobile devices, the hero image will resize when the URL bar disappears or reappears.
     
 ## Deployment
 
@@ -138,7 +159,11 @@ If you'd like to have a copy on your local machine, follow the steps below:
 
 #### Media
 
+* All images came from [Pixabay](https://pixabay.com/).
+
 #### Content
+
+* All content was written by the developer.
 
 #### Code
 https://stackoverflow.com/questions/16245536/setting-a-variable-in-local-storage
