@@ -113,9 +113,12 @@ I used the W3C Markup Validator and W3C CSS Validator Services to validate every
     * As someone who enjoys playing online games, I want to be able to keep track of my scores and see myself improve.
         * You can log into Facebook and email yourself your recent scores so you can go back to try to beat yourself.
         * [Facebook Login](/assets/images/fb-login.PNG)
+        * [Winning Modal](/assets/images/winning-modal.PNG)
+        * [Results](/assets/images/results.PNG)
     * As someone who enjoys playing online games, I want it to be visually appealing and easy to navigate.
         * Striking hero images and colorful design make it visually appealing, and each section is clearly marked so first time users can navigate with ease.
         * [Homepage](/assets/images/homepage.PNG)
+        * [Training Page](/assets/images/training-page.PNG)
     * As someone who enjoys playing online games, there should be something that shows you how to play the game.
         * There is a how to play modal on the home page to give an overview before you play.
         * [How to Play](/assets/images/how-to-play.PNG)
@@ -125,12 +128,15 @@ I used the W3C Markup Validator and W3C CSS Validator Services to validate every
         * Striking hero images and colorful design make it visually appealing, and levels that increase in difficulty make it challenging for the player.
         * [Homepage](/assets/images/homepage.PNG)
         * [Levels](/assets/images/levels.PNG)
+        * [Training Page](/assets/images/training-page.PNG)
     * As the creator of the game, I want people to not feel like it is impossible to beat either.
         * There are varying levels for varying skillsets for people to choose and improve.
         * [Levels](/assets/images/levels.PNG)
     * As the creator of the game, I want people to be able to keep track of their scores to see themselves improve.
         * One can easily log into Facebook and email themselves their scores.
         * [Facebook Login](/assets/images/fb-login.PNG)
+        * [Winning Modal](/assets/images/winning-modal.PNG)
+        * [Results](/assets/images/results.PNG)
 
 ### Further Testing
     
