@@ -92,7 +92,10 @@ Here are some links to wireframes that I had drawn up during the process:
 
 9. [EmailJS](https://www.emailjs.com/)
     * EmailJS is the service that controls sending the scores to the players.
-    
+
+10. [Hover.css](https://ianlunn.github.io/Hover/)
+    * Hover.css is used in the buttons to levels 1 2 and 3 changing the text color to white upon hovering over them.
+       
 ## Testing
 
 ### Further Testing
