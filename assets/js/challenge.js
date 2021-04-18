@@ -256,18 +256,21 @@ $(document).ready(function () {
   $(".facebook-login").click(function () {
     FB.getLoginStatus(function (response) {
       if (response.status === "connected") {
-        FB.api('/me', {fields: 'name,email'}, function (response)  {
-            $(".facebook-login").html("<i class='fab fa-facebook-f'></i> Logged in as " + response.name);
+        FB.api("/me", { fields: "name,email" }, function (response) {
+          $(".facebook-login").html(
+            "<i class='fab fa-facebook-f'></i> Logged in as " + response.name
+          );
         });
       } else {
         FB.login(
           function (response) {
             if (response.status === "connected") {
-                FB.api('/me', {fields: 'name,email'}, function (response)  {
-                    $(".facebook-login").html("<i class='fab fa-facebook-f'></i> Logged in as " + response.name);
-                });
-            } else {
-                console.log(response);
+              FB.api("/me", { fields: "name,email" }, function (response) {
+                $(".facebook-login").html(
+                  "<i class='fab fa-facebook-f'></i> Logged in as " +
+                    response.name
+                );
+              });
             }
           },
           { scope: "email" }
@@ -314,7 +317,8 @@ $(document).ready(function () {
                     name: response.name,
                     time: minutes + ":" + seconds,
                     total_moves: totalMoves,
-                    accuracy: Math.floor((correctMoves / totalMoves) * 100) + "%",
+                    accuracy:
+                      Math.floor((correctMoves / totalMoves) * 100) + "%",
                     to_email: response.email,
                   })
                   .then(
