@@ -229,7 +229,7 @@ $(document).ready(function () {
               }
               cardsFlipped.length = 0;
               imagesFlipped.length = 0;
-            }, 1000);
+            }, 2000);
           }
         }
       }
