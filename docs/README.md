@@ -135,8 +135,6 @@ If you'd like to have a copy on your local machine, follow the steps below:
 
 #### Media
 
-#### Characters
-
 #### Content
 
 #### Code
