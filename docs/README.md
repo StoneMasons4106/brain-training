@@ -83,6 +83,15 @@ Here are some links to wireframes that I had drawn up during the process:
 
 6. [Balsamiq](https://balsamiq.com/)
     * Balsamiq was used to create the wireframes during the design process.
+
+7. [JQuery](https://jquery.com/)
+    * JQuery was used to write shorter, simpler Javascript.
+
+8. [Facebook](https://www.facebook.com/)
+    * Facebook is used so people can log in and receive their scores at the email associated with their profile.
+
+9. [EmailJS](https://www.emailjs.com/)
+    * EmailJS is the service that controls sending the scores to the players.
     
 ## Testing
 
@@ -138,3 +147,5 @@ https://www.computerhope.com/issues/ch001784.htm
 https://medium.com/@khaledhassan45/how-to-shuffle-an-array-in-javascript-6ca30d53f772
 
 #### Acknowledgments
+
+* My mentor for continuous and helpful support/design suggestions.
