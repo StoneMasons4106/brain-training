@@ -185,6 +185,8 @@ If you'd like to have a copy on your local machine, follow the steps below:
 
 * All images came from [Pixabay](https://pixabay.com/).
 
+* Favicon image came from [Fiverr Logo Maker](https://www.fiverr.com/logo-maker).
+
 #### Content
 
 * All content was written by the developer.
