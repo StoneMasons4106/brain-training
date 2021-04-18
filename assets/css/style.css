@@ -16,8 +16,12 @@ header {
     z-index:50;
 }
 
-#darkmode, #how-to-play {
+#darkmode, #home-button-section, #how-to-play {
     margin-top: 5px;
+}
+
+#home-button {
+    color:white;
 }
 
 #home {
@@ -60,8 +64,12 @@ nav {
     color: black;
 }
 
-.level-1, .level-2 {
+.level-3, .level-2 {
     margin-top:50px;
+}
+
+.btn h5 {
+    margin-top:8px;
 }
 
 #level-1-button:hover, #level-2-button:hover, #level-3-button:hover {
@@ -568,7 +576,7 @@ nav {
         display:block;
     }
 
-    #darkmode, #how-to-play {
+    #darkmode, #home-button-section, #how-to-play {
         display:none;
     }
 
