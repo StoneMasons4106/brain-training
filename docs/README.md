@@ -108,16 +108,32 @@ I used the W3C Markup Validator and W3C CSS Validator Services to validate every
 
 * End User
     * As someone who enjoys playing online games, I want it to be challenging enough to hold my attention.
+        * There are 3 levels with increasing levels of difficulty to hold the players attention.
     * As someone who enjoys playing online games, I want to be able to keep track of my scores and see myself improve.
+        * You can log into Facebook and email yourself your recent scores so you can go back to try to beat yourself.
     * As someone who enjoys playing online games, I want it to be visually appealing and easy to navigate.
+        * Striking hero images and colorful design make it visually appealing, and each section is clearly marked so first time users can navigate with ease.
     * As someone who enjoys playing online games, there should be something that shows you how to play the game.
+        * There is a how to play modal on the home page to give an overview before you play.
 
 * Creator
     * As the creator of the game, I want people to enjoy playing the game. So it has to be both visually appealing and challenging enough to hold someone's attention.
+        * Striking hero images and colorful design make it visually appealing, and levels that increase in difficulty make it challenging for the player.
     * As the creator of the game, I want people to not feel like it is impossible to beat either.
+        * There are varying levels for varying skillsets for people to choose and improve.
     * As the creator of the game, I want people to be able to keep track of their scores to see themselves improve.
+        * One can easily log into Facebook and email themselves their scores.
 
 ### Further Testing
+    
+* The site was tested on a variety of devices from desktop to mobile to tablet. Other devices were simulated through Chrome dev tools.
+    
+* Lighthouse was used to test the pages of this site.
+    * No category tested lower than 79. Performance was lower due to the amount of images loaded for the cards on each level.
+    
+* Browsers used to test include Chrome, Edge, Safari, and Samsung Internet.
+    
+* All links were properly tested and operational.
 
 ### Known Bugs
 
