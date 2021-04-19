@@ -491,7 +491,7 @@ nav {
     }
 }
 
-@media screen and (max-width: 1550px) and (min-width: 1200px) {
+@media screen and (max-width: 1565px) and (min-width: 1200px) {
     .level-2-card, .level-3-card {
         width:90px;
         height:120px;
@@ -512,9 +512,9 @@ nav {
     }
 }
 
-@media screen and (max-width: 1550px) and (min-width:1200px) and (max-height:830px) {
+@media screen and (max-width: 1565px) and (min-width:1200px) and (max-height:830px) {
     .level-2-cards-section, .level-3-cards-section {
-        margin-top:120px;
+        margin-top:150px;
     }
 }
 
@@ -538,13 +538,13 @@ nav {
     }
 }
 
-@media screen and (min-width:1100px) and (max-width:1550px) and (min-height:1000px) {
+@media screen and (min-width:1100px) and (max-width:1565px) and (min-height:1000px) {
     .level-3-cards-section {
         margin-top: 220px;
     }
 }
 
-@media screen and (min-width:1551px) and (min-height:1000px) {
+@media screen and (min-width:1566px) and (min-height:1000px) {
     .level-3-cards-section {
         margin-top: 170px;
     }
@@ -556,7 +556,7 @@ nav {
     }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1199px) {
     .row-2, .row-3, .row-4 {
         margin-top:0px;
     }
