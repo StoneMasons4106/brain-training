@@ -40,3 +40,8 @@ header {
     background-color: black;
     color:#d5dadd;;
 }
+
+.facebook-login {
+    color: white;
+    border-color: white;
+}

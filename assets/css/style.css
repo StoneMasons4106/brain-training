@@ -450,6 +450,7 @@ nav {
 .facebook-login {
     float:left;
     margin-top:7px;
+    margin-left:40%;
 }
 
 /*-------------- Media Queries --------------*/
@@ -488,6 +489,10 @@ nav {
 @media screen and (max-width: 1750px) {
     .cards-section .row {
         width:97%;
+    }
+
+    .facebook-login {
+        margin-left: 30%;
     }
 }
 
@@ -535,6 +540,12 @@ nav {
 
     .level-1-cards-section {
         margin-top:150px;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .facebook-login {
+        margin-left: 20%;
     }
 }
 
