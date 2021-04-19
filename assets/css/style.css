@@ -677,13 +677,13 @@ nav {
     }
 }
 
-@media screen and (max-height: 775px) {
+@media screen and (max-height: 820px) {
     .select-level {
         top:200px;
     }
 }
 
-@media screen and (max-height: 600px) {
+@media screen and (max-height: 660px) {
     .select-level {
         top:150px;
     }
