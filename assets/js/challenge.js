@@ -29,6 +29,8 @@ $(document).ready(function () {
     }
   });
 
+//Lines 34 to 40 came from Medium.com
+
   function shuffleArray(arr) {
     for (let i = arr.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
@@ -235,6 +237,8 @@ $(document).ready(function () {
       }
     }
   });
+
+  //Lines 241 to 256 came from CodePen
 
   var timer = setInterval(setTime, 1000);
 
