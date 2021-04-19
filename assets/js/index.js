@@ -1,4 +1,7 @@
 $(document).ready(function () {
+
+  //All localStorage.getItem and setItem came from the tutorial on Stack Overflow
+
   var count = localStorage.getItem("count") || 0;
   var level = 0;
 
