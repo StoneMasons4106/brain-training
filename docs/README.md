@@ -151,8 +151,9 @@ I used the W3C Markup Validator and W3C CSS Validator Services to validate every
 
 * To test to make sure that cards were matching or not matching, I console logged the array that holds the currently selected cards, so I could see what happened as it matched, or didn't match.
 
-* To test to make sure that Facebook was logging me in correctly, I would console log the response arrays that I would get from Facebook, and watch the login button on the bottom of the page change to reflect my name. 
+* To test to make sure that Facebook was logging me in correctly, I would console log the responses that I would get from Facebook, and watch the login button on the bottom of the page change to reflect my name. 
     * I would also console log the email of the profile so I could make sure that I was receiving the email I was supposed to from the Facebook email scope.
+    * I logged in as my boss as well to ensure this would work for other users.
 
 * I made sure the accuracy for each round was determined correctly by counting the number of correct moves, dividing it by the total moves, and comparing the results.
 
