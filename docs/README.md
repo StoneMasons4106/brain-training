@@ -149,6 +149,17 @@ I used the W3C Markup Validator and W3C CSS Validator Services to validate every
     
 * All links were properly tested and operational.
 
+* To test to make sure that cards were matching or not matching, I console logged the array that holds the currently selected cards, so I could see what happened as it matched, or didn't match.
+
+* To test to make sure that Facebook was logging me in correctly, I would console log the response arrays that I would get from Facebook, and watch the login button on the bottom of the page change to reflect my name. 
+    * I would also console log the email of the profile so I could make sure that I was receiving the email I was supposed to from the Facebook email scope.
+
+* I made sure the accuracy for each round was determined correctly by counting the number of correct moves, dividing it by the total moves, and comparing the results.
+
+* I ensured that emails were going out via emailJS using myself as a guinea pig.
+    * As long as the user is logged into Facebook, it will send.
+    * If not, it will return an error which says the email can't be sent.
+
 ### Known Bugs
 
 * On mobile devices, the hero image will resize when the URL bar disappears or reappears.
