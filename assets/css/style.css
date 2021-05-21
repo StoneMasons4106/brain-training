@@ -2,6 +2,10 @@
 
 /*-------------- Universal Site Settings --------------*/
 
+body {
+    background-color:black;
+}
+
 .press-start {
     font-family: 'Press Start 2P', cursive;
 }
