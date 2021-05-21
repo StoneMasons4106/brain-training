@@ -9,11 +9,12 @@
 /*-------------- Header --------------*/
 
 header {
-    position:fixed;
+    position:absolute;
     background-color: #d5dadd;
     text-align:center;
     width:100%;
     z-index:50;
+    top:0;
 }
 
 #darkmode, #home-button-section, #how-to-play {
@@ -22,6 +23,10 @@ header {
 
 #home-button {
     color:#198754;
+}
+
+#home-button:hover {
+    color:white;
 }
 
 #home {
